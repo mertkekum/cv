@@ -1,0 +1,112 @@
+<html>
+
+<head>
+  <title>Forms demo</title>
+</head>
+
+<body>
+  <h1>forms demo</h1>
+
+  <!-- <button>Formun dışında</button> -->
+  <form action="/durum">
+    <!-- <button type="button">Lütfen formu gönderme!!</button> -->
+    <label for="kullaniciadi">Kullanıcı adı giriniz: </label>
+    <input type="text" placeholder="Kullanıcı Adı" id="kullaniciadi" name="username" />
+    <label for="password"> Şifre giriniz:</label>
+    <input type="password" placeholder="şifre" name="password" />
+    <!-- <button>Gönder!!</button> -->
+    <label for="color"> Renk seçiniz</label>
+    <input type="color" placeholder="Renk seçiniz" />
+    <label for="number"> Sayı giriniz:</label>
+    <input type="number" id="number" name="num" />
+    <!-- <button>Gönder</button> -->
+    <input type="submit" value="Gönder" />
+  </form>
+  <hr />
+  <h2>reddit</h2>
+  <form action="https://www.reddit.com/search">
+    <input type="text" name="q" />
+    <button>Search Reddit</button>
+  </form>
+  <h2>Google</h2>
+  <form action="https://www.google.com/search">
+    <input type="text" name="q" />
+    <button>Search Google</button>
+  </form>
+  <h2>Youtube</h2>
+  <form action="https://www.youtube.com/results">
+    <input type="text" name="search_query" />
+    <button>Search Youtube</button>
+  </form>
+  <h2>More Input</h2>
+  <form action="/birds">
+    <input type="checkbox" name="tos" id="kabul" checked />
+    <label for="kabul"> Kabul ediyorum</label>
+    <p>
+      <label for="xs">XS:</label>
+      <input type="radio" name="boyut" id="xs" value="xs" />
+      <label for="s">S:</label>
+      <input type="radio" name="boyut" id="s" value="s" />
+      <label for="m">M:</label>
+      <input type="radio" name="boyut" id="m" value="m" />
+
+    </p>
+    <p>
+      <label for="animal"> Pick your favourite animal:</label>
+      <select name="animal" id="animal">
+        <option value="">--Pick your animal--</option>
+        <option value="fish">Fish</option>
+        <option value="cat">Cat</option>
+        <option value="bird">Bird</option>
+      </select>
+    </p>
+    <p>
+      <label for="cheese"> Amount of Cheese</label>
+      <input type="range" name="Amount_of_Cheese" min="1" max="100" id="cheese" step="5" />
+    </p>
+    <p><label for="Special" </label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </p>
+    <button>Send</button>
+  </form>
+  <h2> Validation</h2>
+
+  <button> Submit</button>
+  </form>
+  <hr />
+  <form action="/yedek">
+    <label for="first"> Enter Name</label>
+    <input type="text" name="first" id="first" required minlenght="5" maxlength="25" />
+    <p>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" minlenght="5" maxlength="25" />
+
+    </p>
+    <h2>Url Confirm</h2>
+    <p>
+      <input type="url" />
+    </p>
+    <button> Send</button>
+
+
+  </form>
+  <!-- <hr/>
+      <form action="xplace">
+      <div>
+      <label for="username">Username: </label>
+      <input type="text" placeholder="username" id="username" name="username" />
+      </div>
+<br/>
+<p>
+<label for="password">Password: </label>
+      <input type="text" placeholder="password" id="password" name="password">
+      </p>
+<br/>
+<p>
+   <button> Register </button>
+</p>
+    </form> -->
+
+</body>
+
+</html>
